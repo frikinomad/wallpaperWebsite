@@ -1,0 +1,8 @@
+
+{% block content %}
+{% for image in object_list %}
+    <p>{{image.design_name}}</p>
+    <img src="{{image.photo.url}}">
+{% endfor %}
+
+{% endblock content %}
